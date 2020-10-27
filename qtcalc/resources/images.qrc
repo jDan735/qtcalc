@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="appicons">
+    <file>../images/App_CharacterMap.png</file>
+    <file>../images/Action_Stop.png</file>
+    <file>../images/Prefs_Printer.png</file>
+    <file>../images/Prefs_Media.png</file>
+    <file>../images/Document_Save.png</file>
+    <file>../images/Prefs_Filetypes.png</file>
+    <file>../images/Prefs_Screen.png</file>
+    <file>../images/Qt.iom</file>
+    <file>../images/App_Calculator-61.png</file>
+  </qresource>
+</RCC>
