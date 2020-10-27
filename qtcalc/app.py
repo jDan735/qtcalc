@@ -3,14 +3,20 @@ from PyQt5 import QtWidgets
 import qtcalc
 import aboutqt
 import aboutapp
-from __init__ import __version__
+
+try:
+    from __init__ import __version__
+except:
+    from . import __version__
 
 import sys
 
 
 def optimize(number):
     if int(number) == float(number):
-        return number
+        return int(number)
+    else:
+        return float(number)
 
 
 class QtCalc(QtWidgets.QMainWindow, qtcalc.Ui_MainWindow):
