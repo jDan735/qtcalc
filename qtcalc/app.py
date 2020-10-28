@@ -1,4 +1,6 @@
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtCore
+from PyQt5.QtGui import QKeyEvent
+from PyQt5.QtCore import QEvent
 
 import qtcalc
 import aboutqt
@@ -43,7 +45,31 @@ class QtCalc(QtWidgets.QMainWindow, qtcalc.Ui_MainWindow):
         self.pushButton_clear.clicked.connect(self.clear)
 
     def keyPressEvent(self, event):
-        print("pressed key " + str(event.key()))
+        for num in range(10):
+            if event.key() == QtCore.Qt.__dict__[f"Key_{num}"]:
+                self.__dict__[f"pushButton_{num}"].click()
+
+        if event.key() == QtCore.Qt.Key_Percent:
+            self.pushButton_proc.click()
+
+        elif event.key() == QtCore.Qt.Key_Plus:
+            self.pushButton_sum.click()
+
+        elif event.key() == QtCore.Qt.Key_Return or \
+             event.key() == QtCore.Qt.Key_Enter:
+            self.pushButton_eval.click()
+
+        elif event.key() == QtCore.Qt.Key_Plus:
+            self.pushButton_sum.click()
+
+        elif event.key() == 47:
+            self.pushButton_div.click()
+
+        elif event.key() == QtCore.Qt.Key_Minus:
+            self.pushButton_min.click()
+
+        elif event.key() == 42:
+            self.pushButton_mul.click()
 
     def about_qt(self):
         modal = AboutQt()
