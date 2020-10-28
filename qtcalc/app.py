@@ -42,6 +42,9 @@ class QtCalc(QtWidgets.QMainWindow, qtcalc.Ui_MainWindow):
         self.pushButton_eval.clicked.connect(self.eval_)
         self.pushButton_clear.clicked.connect(self.clear)
 
+    def keyPressEvent(self, event):
+        print("pressed key " + str(event.key()))
+
     def about_qt(self):
         modal = AboutQt()
         modal.exec_()
@@ -91,6 +94,10 @@ class AboutApp(QtWidgets.QDialog, aboutapp.Ui_Dialog):
         self.label_2.setText(f'<span style="font-size:24pt; font-weight:496;"><span style="color:#41cd52">Qt</span>Calc</span> <span style="font-size:18pt; font-weight:400;">{__version__}</span>')
         self.pushButton.clicked.connect(self.close)
 
+    def keyPressEvent(self, event):
+        if event.key() == 16777220:       # key =
+            self.close()
+
 
 class AboutQt(QtWidgets.QDialog, aboutqt.Ui_Dialog):
     def __init__(self):
@@ -105,6 +112,10 @@ class AboutQt(QtWidgets.QDialog, aboutqt.Ui_Dialog):
 
         self.label_2.setText(f'<span style="font-size:24pt; font-weight:400;"><span style="color:#41cd52;">Qt</span> {qt_version}')
         self.pushButton.clicked.connect(self.close)
+
+    def keyPressEvent(self, event):
+        if event.key() == 16777220:       # key =
+            self.close()
 
 
 def main():
