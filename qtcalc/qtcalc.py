@@ -123,6 +123,7 @@ class Ui_MainWindow(object):
         self.lineEdit.setStyleSheet("font-size: 45px; padding-right: 10px; background: #4C4C4C; color: #fff;")
         self.lineEdit.setFrame(False)
         self.lineEdit.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit.setReadOnly(True)
         self.lineEdit.setObjectName("lineEdit")
         self.pushButton_clear.raise_()
         self.pushButton_changepm.raise_()

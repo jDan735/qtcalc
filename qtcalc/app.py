@@ -27,16 +27,10 @@ class QtCalc(QtWidgets.QMainWindow, qtcalc.Ui_MainWindow):
         self.actionAbout_QT.triggered.connect(self.about_qt)
         self.actionAbout_QtCalc.triggered.connect(self.about_app)
 
-        self.pushButton_0.clicked.connect(lambda: self.enter_number("0"))
-        self.pushButton_1.clicked.connect(lambda: self.enter_number("1"))
-        self.pushButton_2.clicked.connect(lambda: self.enter_number("2"))
-        self.pushButton_3.clicked.connect(lambda: self.enter_number("3"))
-        self.pushButton_4.clicked.connect(lambda: self.enter_number("4"))
-        self.pushButton_5.clicked.connect(lambda: self.enter_number("5"))
-        self.pushButton_6.clicked.connect(lambda: self.enter_number("6"))
-        self.pushButton_7.clicked.connect(lambda: self.enter_number("7"))
-        self.pushButton_8.clicked.connect(lambda: self.enter_number("8"))
-        self.pushButton_9.clicked.connect(lambda: self.enter_number("9"))
+        for num in range(10):
+            num = str(num)
+            btn = self.__dict__[f"pushButton_{num}"]
+            btn.clicked.connect(lambda checked=None, x=num: self.enter_number(x))
 
         self.pushButton_div.clicked.connect(lambda: self.enter_symbol("/"))
         self.pushButton_mul.clicked.connect(lambda: self.enter_symbol("*"))
