@@ -73,9 +73,9 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "About QtSCP"))
+        Dialog.setWindowTitle(_translate("Dialog", "About QtCalc"))
         self.label_2.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:24pt; font-weight:496; color:#41cd52;\">Qt</span><span style=\" font-size:24pt; font-weight:496;\">Calc </span>0.0.1</p></body></html>"))
         self.pushButton.setText(_translate("Dialog", "OK"))
         self.label.setText(_translate("Dialog", "<html><head/><body><p><img src=\":/appicons/images/App_Calculator-61.png\"/></p></body></html>"))
-        self.label_4.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt; color:#000000;\">Qt-clone of MacOS calculator </span><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt;\">Copyright (C) 2020</span><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt; color:#000000;\"> @jDan735</span></p></body></html>"))
+        self.label_4.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt; color:#000000;\">Qt-clone of macOS calculator </span><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt;\">Copyright (C) 2020</span><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt; color:#000000;\"> @jDan735</span></p></body></html>"))
 import images_rc

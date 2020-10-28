@@ -94,7 +94,7 @@ class AboutApp(QtWidgets.QDialog, aboutapp.Ui_Dialog):
         super(AboutApp, self).__init__()
         self.setupUi(self)
 
-        self.label_2.setText(f'<span style="font-size:24pt; font-weight:496;"><span style="color:#41cd52">Qt</span>SCP</span> <span style="font-size:18pt; font-weight:400;">{__version__}</span>')
+        self.label_2.setText(f'<span style="font-size:24pt; font-weight:496;"><span style="color:#41cd52">Qt</span>Calc</span> <span style="font-size:18pt; font-weight:400;">{__version__}</span>')
         self.pushButton.clicked.connect(self.close)
 
 

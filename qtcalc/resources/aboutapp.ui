@@ -47,7 +47,7 @@
    <enum>Qt::NoContextMenu</enum>
   </property>
   <property name="windowTitle">
-   <string>About QtSCP</string>
+   <string>About QtCalc</string>
   </property>
   <property name="windowIcon">
    <iconset resource="images.qrc">
@@ -139,7 +139,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Noto Sans Display'; font-size:9pt; color:#000000;&quot;&gt;Qt-clone of MacOS calculator &lt;/span&gt;&lt;span style=&quot; font-family:'Noto Sans Display'; font-size:9pt;&quot;&gt;Copyright (C) 2020&lt;/span&gt;&lt;span style=&quot; font-family:'Noto Sans Display'; font-size:9pt; color:#000000;&quot;&gt; @jDan735&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Noto Sans Display'; font-size:9pt; color:#000000;&quot;&gt;Qt-clone of macOS calculator &lt;/span&gt;&lt;span style=&quot; font-family:'Noto Sans Display'; font-size:9pt;&quot;&gt;Copyright (C) 2020&lt;/span&gt;&lt;span style=&quot; font-family:'Noto Sans Display'; font-size:9pt; color:#000000;&quot;&gt; @jDan735&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="wordWrap">
     <bool>true</bool>

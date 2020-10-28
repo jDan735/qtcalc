@@ -407,7 +407,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-size: 45px; padding-right: 15px; background: #4C4C4C; color: #fff;</string>
+     <string notr="true">font-size: 45px; padding-right: 10px; background: #4C4C4C; color: #fff;</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -446,7 +446,7 @@
      <x>0</x>
      <y>0</y>
      <width>280</width>
-     <height>19</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -490,7 +490,7 @@
      <normaloff>:/appicons/images/Qt.iom</normaloff>:/appicons/images/Qt.iom</iconset>
    </property>
    <property name="text">
-    <string>About QT</string>
+    <string>About Qt</string>
    </property>
   </action>
   <action name="actionAbout_QtCalc">
