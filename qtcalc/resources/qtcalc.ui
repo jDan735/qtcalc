@@ -462,6 +462,8 @@
     <property name="title">
      <string>Edit</string>
     </property>
+    <addaction name="actionSettings"/>
+    <addaction name="actionCustomization"/>
    </widget>
    <widget class="QMenu" name="menuView">
     <property name="title">
@@ -577,6 +579,24 @@
    </property>
    <property name="text">
     <string>Convert</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/appicons/images/Prefs_Media.png</normaloff>:/appicons/images/Prefs_Media.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionCustomization">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/appicons/images/Prefs_Backgrounds.png</normaloff>:/appicons/images/Prefs_Backgrounds.png</iconset>
+   </property>
+   <property name="text">
+    <string>Customization</string>
    </property>
   </action>
  </widget>

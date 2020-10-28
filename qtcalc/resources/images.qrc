@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="appicons">
+    <file>../images/Prefs_Backgrounds.png</file>
+    <file>../images/Server_Input.png</file>
     <file>../images/App_CharacterMap.png</file>
     <file>../images/Action_Stop.png</file>
     <file>../images/Prefs_Printer.png</file>
