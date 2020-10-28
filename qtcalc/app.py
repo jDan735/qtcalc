@@ -59,7 +59,7 @@ class QtCalc(QtWidgets.QMainWindow, qtcalc.Ui_MainWindow):
     def proc(self):
         try:
             proc = 100 / float(self.lineEdit.text())
-            self.lineEdit.setText(str(optimize(proc)))
+            self.lineEdit.setText(str(round(optimize(proc), 3)))
         except:
             self.lineEdit.setText("Error")
 
@@ -81,7 +81,7 @@ class QtCalc(QtWidgets.QMainWindow, qtcalc.Ui_MainWindow):
     def eval_(self):
         try:
             number = eval(self.lineEdit.text())
-            self.lineEdit.setText(str(optimize(number)))
+            self.lineEdit.setText(str(round(optimize(number), 3)))
         except:
             self.lineEdit.setText("Error")
 
