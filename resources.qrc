@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="menu">
+    <file>img/menu/document-print.svg</file>
+    <file>img/menu/application-menu.svg</file>
+    <file>img/menu/document-save-as.svg</file>
+    <file>img/menu/draw-watercolor.svg</file>
+    <file>img/menu/preferences-system.svg</file>
+    <file>img/menu/application-exit.svg</file>
+  </qresource>
+  <qresource prefix="app">
+    <file>img/app/Qt.png</file>
+    <file>img/app/App_Calculator_2.svg</file>
+    <file>img/app/App_CharacterMap.svg</file>
+    <file>img/app/Prefs_Filetypes.svg</file>
+    <file>img/app/Prefs_Screen.svg</file>
+  </qresource>
+</RCC>
