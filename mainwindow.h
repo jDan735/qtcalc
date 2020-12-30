@@ -14,6 +14,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     void showAboutQt();
+    void showAboutApp();
     ~MainWindow();
 
 private:

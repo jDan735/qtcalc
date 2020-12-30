@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "aboutqt.h"
+#include "aboutapp.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -9,6 +10,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     connect(ui->actionAbout_Qt, &QAction::triggered, this, &MainWindow::showAboutQt);
+    connect(ui->actionAbout_QtCalc, &QAction::triggered, this, &MainWindow::showAboutApp);
+}
+
+void MainWindow::showAboutApp(){
+    AboutApp *popup = new AboutApp(this);
+    popup->setModal(true);
+    popup->show();
 }
 
 void MainWindow::showAboutQt(){

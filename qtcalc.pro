@@ -20,15 +20,18 @@ win32:{
 }
 
 SOURCES += \
+    aboutapp.cpp \
     aboutqt.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    aboutapp.h \
     aboutqt.h \
     mainwindow.h
 
 FORMS += \
+    aboutapp.ui \
     aboutqt.ui \
     mainwindow.ui
 
